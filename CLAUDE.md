@@ -33,9 +33,12 @@ YouTube API        → /api/youtube         → Pages (RSC, ISR 1h)
 
 ## Design System (변경 불가)
 
-| 항목 | 값 |
-|------|-----|
-| Primary | `#1B2A4A` (딥 네이비) |
-| Accent | `#C9A96E` (소프트 골드) |
-| Background | `#F5F5F5` |
-| Font | Pretendard Variable (`font-sans`) |
+> **디자인 방향**: 흰색·따뜻한 크림 배경 주도. 네이비(`#1B2A4A`)는 버튼·강조 포인트에만 사용. 레퍼런스: sansung.org
+
+| 항목 | 값 | 용도 |
+|------|-----|------|
+| Primary | `#1B2A4A` (딥 네이비) | 버튼, 강조 텍스트, 링크 hover — 배경 금지 |
+| Accent | `#C9A96E` (소프트 골드) | 장식선, 포인트 요소 |
+| Background | `#FFFFFF` (흰색) | 기본 배경 |
+| Section-warm | `#FAF8F5` (따뜻한 크림) | 짝수 섹션, 서브페이지 배너 배경 |
+| Font | Pretendard Variable (`font-sans`) | 전체 |

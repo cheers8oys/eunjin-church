@@ -505,21 +505,22 @@ export async function GET() {
 ### 8.1 globals.css 커스텀 테마
 
 ```css
-@layer base {
-  :root {
-    --background: 0 0% 96%;        /* #F5F5F5 */
-    --foreground: 0 0% 20%;        /* #333333 */
-    --primary: 218 45% 20%;        /* #1B2A4A */
-    --primary-foreground: 0 0% 100%;
-    --accent: 36 42% 60%;          /* #C9A96E */
-    --accent-foreground: 36 70% 12%;
-    --muted: 0 0% 47%;             /* #777777 */
-    --muted-foreground: 0 0% 47%;
-    --border: 0 0% 88%;            /* #E0E0E0 */
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 20%;
-    --radius: 0.75rem;
-  }
+@theme inline {
+  --color-primary: #1B2A4A;          /* 버튼·강조 포인트 — 배경 금지 */
+  --color-primary-foreground: #ffffff;
+  --color-accent: #C9A96E;           /* 소프트 골드 */
+  --color-accent-foreground: #3a2a0e;
+  --color-background: #FFFFFF;       /* 흰색 기본 배경 */
+  --color-section-warm: #FAF8F5;     /* 따뜻한 크림 — 짝수 섹션·서브페이지 배너 */
+  --color-foreground: #1A1A1A;       /* 본문 텍스트 */
+  --color-muted: #6B7280;
+  --color-muted-foreground: #6B7280;
+  --color-border: #E0E0E0;
+  --color-card: #ffffff;
+  --color-card-foreground: #1A1A1A;
+  --color-secondary: #ffffff;
+  --color-secondary-foreground: #1B2A4A;
+  --radius: 0.75rem;
 }
 ```
 

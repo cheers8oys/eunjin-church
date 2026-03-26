@@ -6,15 +6,16 @@
   --color-primary-foreground: #ffffff;
   --color-accent: #C9A96E;
   --color-accent-foreground: #3a2a0e;
-  --color-background: #F5F5F5;
-  --color-foreground: #333333;
-  --color-muted: #777777;
-  --color-muted-foreground: #777777;
+  --color-background: #FFFFFF;
+  --color-foreground: #1A1A1A;
+  --color-muted: #6B7280;
+  --color-muted-foreground: #6B7280;
+  --color-section-warm: #FAF8F5;
   --color-border: #E0E0E0;
   --color-input: #E0E0E0;
   --color-ring: #1B2A4A;
   --color-card: #ffffff;
-  --color-card-foreground: #333333;
+  --color-card-foreground: #1A1A1A;
   --color-secondary: #ffffff;
   --color-secondary-foreground: #1B2A4A;
 

@@ -25,21 +25,21 @@ const QUICK_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-gray-50 text-gray-800">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* 교회 정보 */}
           <div>
             <p className="font-bold text-lg mb-1">은진교회</p>
-            <p className="text-white/60 text-sm mb-4">은혜와 진리가 충만한 교회</p>
-            <address className="not-italic text-sm text-white/70 space-y-1">
+            <p className="text-gray-500 text-sm mb-4">은혜와 진리가 충만한 교회</p>
+            <address className="not-italic text-sm text-gray-500 space-y-1">
               <p>경기 의정부시 추동로 98</p>
             </address>
           </div>
 
           {/* 바로가기 */}
           <div>
-            <p className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wider">
+            <p className="font-semibold text-sm mb-4 text-gray-500 uppercase tracking-wider">
               바로가기
             </p>
             <ul className="space-y-2">
@@ -47,7 +47,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/70 hover:text-white transition-colors"
+                    className="text-sm text-gray-600 hover:text-primary transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
 
           {/* SNS */}
           <div>
-            <p className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wider">
+            <p className="font-semibold text-sm mb-4 text-gray-500 uppercase tracking-wider">
               SNS
             </p>
             <div className="flex gap-3">
@@ -67,7 +67,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
-                className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition-colors"
+                className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors text-gray-600"
               >
                 <YoutubeIcon size={18} />
               </a>
@@ -77,14 +77,14 @@ export default function Footer() {
       </div>
 
       {/* 저작권 바 */}
-      <div className="border-t border-white/10">
-        <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/50">
+      <div className="border-t border-gray-200">
+        <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
           <p>Copyright © {new Date().getFullYear()} 은진교회. All rights reserved.</p>
           <div className="flex gap-4">
-            <Link href="/terms" className="hover:text-white/80 transition-colors">
+            <Link href="/terms" className="hover:text-gray-700 transition-colors">
               이용약관
             </Link>
-            <Link href="/privacy" className="hover:text-white/80 transition-colors">
+            <Link href="/privacy" className="hover:text-gray-700 transition-colors">
               개인정보처리방침
             </Link>
           </div>

@@ -75,19 +75,19 @@ describe("Header - 2-1-C. 드롭다운 서브메뉴", () => {
 });
 
 describe("Header - 2-1-D. 스크롤 투명→불투명 전환", () => {
-  it("초기 상태: 헤더에 bg-transparent 클래스 적용", () => {
+  it("초기 상태: 헤더에 bg-white 클래스 적용", () => {
     render(<Header />);
-    expect(screen.getByRole("banner")).toHaveClass("bg-transparent");
+    expect(screen.getByRole("banner")).toHaveClass("bg-white");
   });
 
-  it("scroll 이벤트 발생 후: bg-primary 클래스 적용", async () => {
+  it("scroll 이벤트 발생 후: shadow-sm 클래스 적용", async () => {
     render(<Header />);
     act(() => {
       Object.defineProperty(window, "scrollY", { value: 100, writable: true, configurable: true });
       window.dispatchEvent(new Event("scroll"));
     });
     await waitFor(() => {
-      expect(screen.getByRole("banner")).toHaveClass("bg-primary");
+      expect(screen.getByRole("banner")).toHaveClass("shadow-sm");
     });
   });
 });

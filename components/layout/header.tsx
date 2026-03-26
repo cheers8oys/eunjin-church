@@ -54,8 +54,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-white ${
+        scrolled ? "shadow-sm border-b border-gray-100" : ""
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-[72px] px-4">
@@ -68,7 +68,7 @@ export default function Header() {
             height={40}
             className="rounded-full"
           />
-          <span className="font-bold text-white text-lg">은진교회</span>
+          <span className="font-bold text-gray-900 text-lg">은진교회</span>
         </Link>
 
         {/* 데스크톱 네비게이션 */}
@@ -78,7 +78,7 @@ export default function Header() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-white hover:text-accent transition-colors text-sm font-medium"
+                className="text-gray-700 hover:text-primary transition-colors text-sm font-medium"
               >
                 {item.label}
               </Link>
@@ -88,7 +88,7 @@ export default function Header() {
                   onClick={() =>
                     setOpenMenu(openMenu === item.label ? null : item.label)
                   }
-                  className="flex items-center gap-1 text-white hover:text-accent transition-colors text-sm font-medium"
+                  className="flex items-center gap-1 text-gray-700 hover:text-primary transition-colors text-sm font-medium"
                 >
                   {item.label}
                   <ChevronDown size={14} />
@@ -117,7 +117,7 @@ export default function Header() {
         <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
           <SheetTrigger asChild>
             <button
-              className="md:hidden text-white"
+              className="md:hidden text-gray-700"
               aria-label="메뉴 열기"
               aria-expanded={mobileOpen}
             >

@@ -23,14 +23,11 @@ export default function SubpageHero({
   return (
     <section
       className={`relative w-full h-[260px] md:h-[320px] flex flex-col items-center justify-center overflow-hidden ${className ?? ""}`}
-      style={{
-        background:
-          "linear-gradient(135deg, #1B2A4A 0%, #243558 50%, #1a3060 100%)",
-      }}
+      style={{ background: "#FAF8F5" }}
     >
       {/* 장식 요소: 대각선 패턴 */}
       <div
-        className="absolute inset-0 opacity-[0.04]"
+        className="absolute inset-0 opacity-[0.06]"
         style={{
           backgroundImage:
             "repeating-linear-gradient(45deg, #C9A96E 0, #C9A96E 1px, transparent 0, transparent 50%)",
@@ -40,12 +37,12 @@ export default function SubpageHero({
 
       {/* 좌하단 골드 포인트 원 */}
       <div
-        className="absolute -bottom-24 -left-24 w-64 h-64 rounded-full opacity-10"
+        className="absolute -bottom-24 -left-24 w-64 h-64 rounded-full opacity-20"
         style={{ background: "#C9A96E" }}
       />
       {/* 우상단 골드 포인트 원 */}
       <div
-        className="absolute -top-20 -right-20 w-52 h-52 rounded-full opacity-10"
+        className="absolute -top-20 -right-20 w-52 h-52 rounded-full opacity-20"
         style={{ background: "#C9A96E" }}
       />
 
@@ -57,12 +54,12 @@ export default function SubpageHero({
           style={{ background: "#C9A96E" }}
         />
 
-        <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
           {title}
         </h1>
 
         {subtitle && (
-          <p className="mt-3 text-sm md:text-base text-white/60 max-w-md">
+          <p className="mt-3 text-sm md:text-base text-gray-500 max-w-md">
             {subtitle}
           </p>
         )}
@@ -70,11 +67,11 @@ export default function SubpageHero({
         {/* 브레드크럼 */}
         <nav
           aria-label="breadcrumb"
-          className="mt-5 flex items-center gap-1 text-xs text-white/50"
+          className="mt-5 flex items-center gap-1 text-xs text-gray-400"
         >
           <Link
             href="/"
-            className="flex items-center gap-1 hover:text-white/80 transition-colors"
+            className="flex items-center gap-1 hover:text-gray-700 transition-colors"
           >
             <Home size={12} />
             <span>홈</span>
@@ -85,12 +82,12 @@ export default function SubpageHero({
               {item.href ? (
                 <Link
                   href={item.href}
-                  className="hover:text-white/80 transition-colors"
+                  className="hover:text-gray-700 transition-colors"
                 >
                   {item.label}
                 </Link>
               ) : (
-                <span className="text-white/80">{item.label}</span>
+                <span className="text-gray-700">{item.label}</span>
               )}
             </span>
           ))}
