@@ -30,8 +30,13 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files
 .env*
+!.env.example
+
+# 레퍼런스/스크린샷 (용량 큰 이미지)
+/references/
+/screenshots/
 
 # vercel
 .vercel
