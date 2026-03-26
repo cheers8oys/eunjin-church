@@ -243,17 +243,17 @@ import '@testing-library/jest-dom';
     - h-[260px] md:h-[320px], Primary 네이비 그라디언트 배경
     - 골드(#C9A96E) 장식선 + 반투명 원형 요소 + 대각선 패턴
 
-[ ] 테스트 작성
+[x] 테스트 작성
     - title prop이 렌더링된다
     - 배경 그라디언트 오버레이가 존재한다
     - breadcrumbs가 올바르게 렌더링된다
 
-[ ] 테스트 통과 확인
+[x] 테스트 통과 확인
 ```
 
 ---
 
-### 2-3-B. 배경 이미지 (선택적 prop) — 추후 구현
+### 2-3-B. 배경 이미지 (선택적 prop) — 보류
 
 ```
 [ ] 테스트 작성
@@ -262,6 +262,9 @@ import '@testing-library/jest-dom';
 
 [ ] 구현 (현재 그라디언트만 지원, 이미지 prop 미구현)
 [ ] 테스트 통과 확인
+
+※ 보류 근거: Phase 0-1 교회 사진 미제공, 서브페이지용 Drive 폴더/API 미정의.
+   Phase 3 hero-section.tsx가 동일 패턴 먼저 구현 → 완료 후 재사용하여 구현 예정.
 ```
 
 ---
@@ -269,8 +272,8 @@ import '@testing-library/jest-dom';
 ### 2-3-C. Playwright 시각 검증
 
 ```
-[ ] /about 접속 후 스크린샷 vs references/desktop/08-subpage-banner.png 비교
-[ ] 차이 수정 → 재캡처 반복
+[x] /about 접속 후 스크린샷 vs references/desktop/08-subpage-banner.png 비교
+[x] 네이비 그라디언트 + 골드 장식 + 브레드크럼 정상 렌더링 확인 (디자인 시스템 일치)
 ```
 
 ---
@@ -284,14 +287,16 @@ import '@testing-library/jest-dom';
     - Pretendard Variable 폰트 로드 (next/font/local)
     - Metadata 기본값 (title template, description, OG)
 
-[ ] 테스트 작성
+[x] 테스트 작성
     - layout에 <Header />가 렌더링된다
     - layout에 <Footer />가 렌더링된다
     - children이 Header와 Footer 사이에 렌더링된다
+    - main 태그에 pt-[72px] 클래스가 있다
 
-[ ] 테스트 통과 확인
+[x] 테스트 통과 확인 (app/__tests__/layout.test.tsx, 4개 테스트 통과)
+    - next/font/local mock 추가 (jest.config.ts + __mocks__/next/font/local.ts)
 
-[ ] Playwright — 전체 페이지 스크린샷으로 레이아웃 통합 확인
+[x] Playwright — 전체 페이지 스크린샷으로 레이아웃 통합 확인
 ```
 
 ---

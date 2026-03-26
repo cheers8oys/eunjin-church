@@ -130,7 +130,7 @@
 - [x] 스크롤 시 배경 투명 → `bg-primary/95 backdrop-blur` 전환 (useState + useEffect scroll 감지)
 - [x] 모바일 햄버거 메뉴 (shadcn `Sheet`): 전체 메뉴 트리, 아코디언 서브메뉴
 - [x] 접근성: `aria-label`, `aria-expanded`
-- [ ] **Claude Code + Playwright 루프로 레퍼런스와 비교 조정** (대기 중)
+- [x] **Claude Code + Playwright 루프로 레퍼런스와 비교 조정**
 
 ### 2-2. 푸터 ★ `06-footer.png`
 - [x] `components/layout/footer.tsx` 작성
@@ -145,8 +145,8 @@
 - [x] Props: `title`, `subtitle` (선택), `breadcrumbs`, `className` (선택)
 - [x] 높이 260px(mobile) / 320px(desktop), Primary 네이비 그라디언트 + 골드 장식 요소
 - [x] 브레드크럼 내비게이션 포함 (Home → 상위 → 현재)
-- [ ] backgroundImage prop 지원 (next/image 연동) — 추후 구현
-- [ ] **Claude Code + Playwright 루프** (시각 검증 대기)
+- [ ] backgroundImage prop 지원 (next/image 연동) — Phase 3 hero-section 완료 후 구현
+- [x] **Claude Code + Playwright 루프** (시각 검증 완료)
 
 ### 2-4. 루트 레이아웃
 - [x] `app/layout.tsx`: Pretendard 폰트 로드, Metadata 기본값, Header + Footer 배치
@@ -219,14 +219,14 @@
 ## Phase 4. 서브 페이지
 
 ### 4-1. 교회소개 `/about`
-- [ ] 페이지 히어로 배너
+- [x] 페이지 히어로 배너
 - [ ] 담임목사 인사말 섹션 (사진 + 텍스트 2열 레이아웃)
 - [ ] 비전 & 핵심가치 카드 그리드
 - [ ] 교회 연혁 타임라인 (Tailwind CSS 세로 라인 + 좌우 교차)
 - [ ] 교회 시설 사진 갤러리
 
 ### 4-2. 예배안내 `/worship`
-- [ ] 페이지 히어로 배너
+- [x] 페이지 히어로 배너
 - [ ] 8개 예배 카드 (shadcn Card: 예배명 + 시간 + 장소 + 설명)
 - [ ] 2열(md) / 1열(sm) 그리드
 
@@ -237,7 +237,7 @@
 - [ ] `/api/drive/staff` fetch → 동적 렌더링
 
 ### 4-4. 새신자 안내 `/newcomer`
-- [ ] 페이지 히어로 배너
+- [x] 페이지 히어로 배너
 - [ ] 방문 가이드 (아이콘 + 텍스트 카드): 주차, 안내데스크, 예배 참여
 - [ ] 등록 안내 스텝 UI (`id="register"`)
 - [ ] 기도 요청 안내 + Google Form 링크 (`id="prayer"`)

@@ -21,6 +21,15 @@ test("header - mobile menu", async ({ page }) => {
   await page.screenshot({ path: "screenshots/mobile/header-menu-open.png" });
 });
 
+// 2-3-C 서브페이지 히어로 배너 시각 검증
+test("subpage hero banner - desktop", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/about");
+  await page.waitForLoadState("networkidle");
+  const hero = page.locator("section").first();
+  await hero.screenshot({ path: "screenshots/desktop/subpage-banner.png" });
+});
+
 const pages = [
   { path: "/", name: "main" },
   { path: "/about", name: "about" },

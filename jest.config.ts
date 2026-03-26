@@ -8,6 +8,7 @@ const config: Config = {
     "^next/image$": "<rootDir>/__mocks__/next/image.tsx",
     "^next/link$": "<rootDir>/__mocks__/next/link.tsx",
     "^next/navigation$": "<rootDir>/__mocks__/next/navigation.ts",
+    "^next/font/local$": "<rootDir>/__mocks__/next/font/local.ts",
     "\\.(css|scss|svg|png|jpg|jpeg|gif|webp|woff2?)$": "<rootDir>/__mocks__/fileMock.ts",
   },
   transform: {
