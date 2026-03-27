@@ -2,6 +2,7 @@ import HeroSection from "@/components/sections/hero-section";
 import QuickActions from "@/components/sections/quick-actions";
 import CommunitySection from "@/components/sections/community-section";
 import ContentSection from "@/components/sections/content-section";
+import GalleryPreview from "@/components/sections/gallery-preview";
 
 const SAMPLE_VIDEOS = [
   {
@@ -30,13 +31,35 @@ const SAMPLE_VIDEOS = [
   },
 ];
 
+const SAMPLE_PHOTOS = [
+  { id: "photo1", src: "/images/gallery/01.jpg", alt: "교회 예배 모습" },
+  { id: "photo2", src: "/images/gallery/02.jpg", alt: "청년부 모임" },
+  { id: "photo3", src: "/images/gallery/03.jpg", alt: "성탄절 행사" },
+  { id: "photo4", src: "/images/gallery/04.jpg", alt: "새신자 환영회" },
+  { id: "photo5", src: "/images/gallery/05.jpg", alt: "수련회" },
+  { id: "photo6", src: "/images/gallery/06.jpg", alt: "봉사활동" },
+  { id: "photo7", src: "/images/gallery/07.jpg", alt: "주일학교 행사" },
+  { id: "photo8", src: "/images/gallery/08.jpg", alt: "부활절 예배" },
+];
+
 export default function Home() {
   return (
     <main>
-      <HeroSection />
-      <QuickActions />
-      <CommunitySection />
-      <ContentSection videos={SAMPLE_VIDEOS} />
+      <div data-animate>
+        <HeroSection />
+      </div>
+      <div data-animate>
+        <QuickActions />
+      </div>
+      <div data-animate>
+        <CommunitySection />
+      </div>
+      <div data-animate>
+        <ContentSection videos={SAMPLE_VIDEOS} />
+      </div>
+      <div data-animate>
+        <GalleryPreview photos={SAMPLE_PHOTOS} />
+      </div>
     </main>
   );
 }

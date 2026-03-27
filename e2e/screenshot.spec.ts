@@ -21,12 +21,12 @@ test("header - mobile menu", async ({ page }) => {
   await page.screenshot({ path: "screenshots/mobile/header-menu-open.png" });
 });
 
-// 3-1~3-4 메인 페이지 섹션별 시각 검증
+// 3-1~3-6 메인 페이지 섹션별 시각 검증
 test("main hero section - desktop", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/");
   await page.waitForLoadState("networkidle");
-  const sections = page.locator("main > section");
+  const sections = page.locator("main section");
   await sections.nth(0).screenshot({ path: "screenshots/desktop/section-01-hero.png" });
 });
 
@@ -34,7 +34,7 @@ test("main quick-actions section - desktop", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/");
   await page.waitForLoadState("networkidle");
-  const sections = page.locator("main > section");
+  const sections = page.locator("main section");
   await sections.nth(1).screenshot({ path: "screenshots/desktop/section-02-quick-actions.png" });
 });
 
@@ -42,7 +42,7 @@ test("main community section - desktop", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/");
   await page.waitForLoadState("networkidle");
-  const sections = page.locator("main > section");
+  const sections = page.locator("main section");
   await sections.nth(2).screenshot({ path: "screenshots/desktop/section-03-community.png" });
 });
 
@@ -50,8 +50,17 @@ test("main content section - desktop", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/");
   await page.waitForLoadState("networkidle");
-  const sections = page.locator("main > section");
+  const sections = page.locator("main section");
   await sections.nth(3).screenshot({ path: "screenshots/desktop/section-04-contents.png" });
+});
+
+// 3-5-D 갤러리 섹션 시각 검증
+test("main gallery section - desktop", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/");
+  await page.waitForLoadState("networkidle");
+  const sections = page.locator("main section");
+  await sections.nth(4).screenshot({ path: "screenshots/desktop/section-05-gallery.png" });
 });
 
 // 2-3-C 서브페이지 히어로 배너 시각 검증

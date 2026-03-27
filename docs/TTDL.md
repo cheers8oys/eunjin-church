@@ -280,40 +280,40 @@ interface GalleryPreviewProps {
 ```
 
 ```
-[ ] 3-5-A 테스트 작성 — 섹션 구조
+[x] 3-5-A 테스트 작성 — 섹션 구조
     - 섹션 제목이 렌더링된다
     - "갤러리 더보기" 링크가 /media/gallery를 가진다
 
-[ ] 3-5-A 구현
+[x] 3-5-A 구현
     - 섹션 제목, CTA 링크
 
-[ ] 3-5-A 테스트 통과 확인
+[x] 3-5-A 테스트 통과 확인
 
-[ ] 3-5-B 테스트 작성 — 사진 그리드
+[x] 3-5-B 테스트 작성 — 사진 그리드
     - photos prop으로 이미지 개수만큼 렌더링된다
     - 각 이미지에 alt 속성이 설정된다
     - photos가 8개 초과 시 처음 8개만 표시된다
     - photos prop이 없을 때 빈 상태 메시지가 표시된다
 
-[ ] 3-5-B 구현
+[x] 3-5-B 구현
     - 4열(lg) / 2열(sm) 그리드
     - next/image 사용 (alt 필수)
     - photos.slice(0, 8)
 
-[ ] 3-5-B 테스트 통과 확인
+[x] 3-5-B 테스트 통과 확인
 
-[ ] 3-5-C 테스트 작성 — 라이트박스 연동
+[x] 3-5-C 테스트 작성 — 라이트박스 연동
     - 사진 클릭 시 Lightbox가 열린다
     - 클릭한 사진의 인덱스가 Lightbox initialIndex로 전달된다
 
-[ ] 3-5-C 구현
+[x] 3-5-C 구현
     - lightboxOpen 상태 + selectedIndex 상태
     - 사진 클릭 → 상태 업데이트
     - Lightbox에 photos/initialIndex/open/onClose 전달
 
-[ ] 3-5-C 테스트 통과 확인
+[x] 3-5-C 테스트 통과 확인
 
-[ ] 3-5-D Playwright 시각 검증
+[x] 3-5-D Playwright 시각 검증
     - 갤러리 섹션 vs references/desktop/05-gallery.png 비교 (2~3회)
 ```
 
@@ -326,25 +326,25 @@ interface GalleryPreviewProps {
 - 테스트: `app/__tests__/page.test.tsx`
 
 ```
-[ ] 3-6-A 테스트 작성 — 섹션 통합
+[x] 3-6-A 테스트 작성 — 섹션 통합
     - HeroSection이 렌더링된다
     - QuickActions가 렌더링된다
     - CommunitySection이 렌더링된다
     - ContentSection이 렌더링된다
     - GalleryPreview가 렌더링된다
 
-[ ] 3-6-A 구현
+[x] 3-6-A 구현
     - app/page.tsx에 모든 섹션 배치
     - 섹션 간 여백 (py-16 md:py-24)
     - 홀수 섹션 bg-white / 짝수 섹션 bg-section-warm 교차
 
-[ ] 3-6-A 테스트 통과 확인
+[x] 3-6-A 테스트 통과 확인
 
-[ ] 3-6-B 스크롤 등장 애니메이션
+[x] 3-6-B 스크롤 등장 애니메이션
     - Intersection Observer 기반 fade-in-up 효과
     - 테스트: 섹션 컨테이너에 data-animate 속성이 있다
 
-[ ] 3-6-C Playwright 전체 페이지 검증
+[x] 3-6-C Playwright 전체 페이지 검증
     - screenshots/desktop/main.png (fullPage) vs references/pages/main-full.png 비교
     - tablet, mobile 캡처 및 비교
     - 목표: 레퍼런스와 80%+ 유사 (3~5회 반복)
