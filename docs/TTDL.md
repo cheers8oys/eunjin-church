@@ -86,7 +86,7 @@ interface HeroSectionProps {
 ```
 
 ```
-[ ] 3-1-A 테스트 작성 — 기본 콘텐츠
+[x] 3-1-A 테스트 작성 — 기본 콘텐츠
     - "은진교회" 교회명이 렌더링된다
     - 슬로건 텍스트가 렌더링된다 ("은혜와 진리가 충만한 교회" 또는 설정된 슬로건)
     - CTA 버튼 "예배 영상 보기"가 렌더링된다
@@ -94,25 +94,25 @@ interface HeroSectionProps {
     - "예배 영상 보기" 링크가 /media/sermons를 가진다
     - "교회 방문하기" 링크가 /location을 가진다
 
-[ ] 3-1-A 구현
+[x] 3-1-A 구현
     - 풀 와이드 섹션 (min-h-[85vh] 또는 min-h-screen)
     - 배경: next/image fill + priority (placeholder 이미지로 시작)
     - 어두운 그라디언트 오버레이 (bg-black/50 또는 linear-gradient)
     - 교회명 h1, 슬로건 p
     - Button 컴포넌트 2개
 
-[ ] 3-1-A 테스트 통과 확인
+[x] 3-1-A 테스트 통과 확인 (6/6 pass)
 
-[ ] 3-1-B 테스트 작성 — 설교 정보 영역
+[x] 3-1-B 테스트 작성 — 설교 정보 영역
     - heroData prop 있을 때: 설교 제목이 렌더링된다
     - heroData prop 있을 때: 설교 날짜가 렌더링된다
     - heroData prop이 null/undefined일 때: 설교 정보 영역이 렌더링되지 않는다
 
-[ ] 3-1-B 구현
+[x] 3-1-B 구현
     - heroData가 있을 때만 설교 정보 박스 렌더링
     - accent 색 왼쪽 보더 (border-l-4 border-accent)
 
-[ ] 3-1-B 테스트 통과 확인
+[x] 3-1-B 테스트 통과 확인 (3/3 pass)
 
 [ ] 3-1-C Playwright 시각 검증
     - npm run dev → npm run screenshot -- --grep "main.*desktop"
@@ -129,7 +129,7 @@ interface HeroSectionProps {
 - 테스트: `components/sections/__tests__/quick-actions.test.tsx`
 
 ```
-[ ] 3-2-A 테스트 작성 — 버튼 렌더링
+[x] 3-2-A 테스트 작성 — 버튼 렌더링
     - 5개 액션 버튼이 모두 렌더링된다
     - "예배안내" 링크가 /worship을 가진다
     - "주보" 링크가 /media/bulletins (또는 Drive 주보 링크)를 가진다
@@ -137,12 +137,12 @@ interface HeroSectionProps {
     - "기도 요청" 링크가 /newcomer#prayer를 가진다
     - "봉사 신청" 링크가 /newcomer#serve를 가진다
 
-[ ] 3-2-A 구현
+[x] 3-2-A 구현
     - 섹션 배경: bg-primary (레퍼런스 확인 후 조정)
     - QUICK_ACTIONS 상수 정의 (label, href, icon)
     - Lucide 아이콘 + accent 원형 배경 버튼
 
-[ ] 3-2-A 테스트 통과 확인
+[x] 3-2-A 테스트 통과 확인 (6/6 pass)
 
 [ ] 3-2-B Playwright 시각 검증
     - screenshots/desktop/main.png 퀵 액션 영역 vs references/desktop/02-quick-actions.png 비교

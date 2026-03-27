@@ -145,7 +145,7 @@
 - [x] Props: `title`, `subtitle` (선택), `breadcrumbs`, `className` (선택)
 - [x] 높이 260px(mobile) / 320px(desktop), Primary 네이비 그라디언트 + 골드 장식 요소
 - [x] 브레드크럼 내비게이션 포함 (Home → 상위 → 현재)
-- [ ] backgroundImage prop 지원 (next/image 연동) — Phase 3 hero-section 완료 후 구현
+- [ ] backgroundImage prop 지원 (next/image 연동) — 보류: 교회 사진 미제공(Phase 0-1), 서브페이지용 Drive 폴더/API 미정의. hero-section.tsx(Phase 3-1)에서 동일 패턴 구현 후 재사용 예정
 - [x] **Claude Code + Playwright 루프** (시각 검증 완료)
 
 ### 2-4. 루트 레이아웃
