@@ -12,24 +12,29 @@ interface HeroSectionProps {
 
 export default function HeroSection({ heroData }: HeroSectionProps) {
   return (
-    <section className="relative min-h-[85vh] flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative min-h-[85vh] flex flex-col items-center justify-center overflow-hidden bg-primary">
       <Image
         fill
         priority
         alt="은진교회 배경"
         src="/placeholder.jpg"
+        className="object-cover"
       />
       {/* 오버레이 */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
 
       {/* 콘텐츠 */}
       <div className="relative z-10 text-center px-4">
         <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
           은진교회
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-white/90">
-          은혜와 진리가 충만한 교회
-        </p>
+        <div className="mt-4 flex items-center justify-center gap-3">
+          <span className="w-8 h-px bg-accent" />
+          <p className="text-lg md:text-xl text-white/90">
+            은혜와 진리가 충만한 교회
+          </p>
+          <span className="w-8 h-px bg-accent" />
+        </div>
 
         {/* 버튼 그룹 */}
         <div className="mt-8 flex gap-4 flex-wrap justify-center">

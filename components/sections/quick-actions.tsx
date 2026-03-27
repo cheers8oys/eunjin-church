@@ -11,7 +11,7 @@ const QUICK_ACTIONS = [
 
 export default function QuickActions() {
   return (
-    <section className="py-8 bg-white">
+    <section className="py-10 bg-white border-b border-border/40">
       <div className="max-w-5xl mx-auto px-4">
         <div className="grid grid-cols-3 sm:grid-cols-5 gap-6 justify-items-center">
           {QUICK_ACTIONS.map((action) => {

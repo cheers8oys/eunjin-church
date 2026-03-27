@@ -114,7 +114,7 @@ interface HeroSectionProps {
 
 [x] 3-1-B 테스트 통과 확인 (3/3 pass)
 
-[ ] 3-1-C Playwright 시각 검증
+[x] 3-1-C Playwright 시각 검증
     - npm run dev → npm run screenshot -- --grep "main.*desktop"
     - screenshots/desktop/main.png 히어로 영역 vs references/desktop/01-hero.png 비교
     - 차이 수정 → 재캡처 (3~5회)
@@ -144,7 +144,7 @@ interface HeroSectionProps {
 
 [x] 3-2-A 테스트 통과 확인 (6/6 pass)
 
-[ ] 3-2-B Playwright 시각 검증
+[x] 3-2-B Playwright 시각 검증
     - screenshots/desktop/main.png 퀵 액션 영역 vs references/desktop/02-quick-actions.png 비교
     - 차이 수정 → 재캡처 (2~3회)
 ```
@@ -196,7 +196,7 @@ interface CommunitySectionProps {
 
 [x] 3-3-B 테스트 통과 확인
 
-[ ] 3-3-C Playwright 시각 검증
+[x] 3-3-C Playwright 시각 검증
     - 공동체 섹션 vs references/desktop/03-community.png 비교 (2~3회)
 ```
 
@@ -256,7 +256,7 @@ interface ContentSectionProps {
 
 [x] 3-4-C 테스트 통과 확인
 
-[ ] 3-4-D Playwright 시각 검증
+[x] 3-4-D Playwright 시각 검증
     - 콘텐츠 섹션 vs references/desktop/04-contents.png 비교 (2~3회)
 ```
 
