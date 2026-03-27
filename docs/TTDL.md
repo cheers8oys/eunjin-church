@@ -171,30 +171,30 @@ interface CommunitySectionProps {
 ```
 
 ```
-[ ] 3-3-A 테스트 작성 — 섹션 구조
+[x] 3-3-A 테스트 작성 — 섹션 구조
     - 섹션 제목이 렌더링된다
     - 부제 텍스트가 렌더링된다
     - "공동체 둘러보기" 버튼이 렌더링된다
 
-[ ] 3-3-A 구현
+[x] 3-3-A 구현
     - 섹션 제목 h2, 부제 p
     - CTA 버튼 컴포넌트
 
-[ ] 3-3-A 테스트 통과 확인
+[x] 3-3-A 테스트 통과 확인
 
-[ ] 3-3-B 테스트 작성 — 공동체 카드
+[x] 3-3-B 테스트 작성 — 공동체 카드
     - communities prop으로 카드 개수만큼 렌더링된다
     - 각 카드에 title이 표시된다
     - 각 카드에 description이 표시된다
     - 각 카드 링크가 올바른 href를 가진다
     - communities prop이 없을 때 기본 목록(장년/청년/다음세대/주일학교)이 렌더링된다
 
-[ ] 3-3-B 구현
+[x] 3-3-B 구현
     - DEFAULT_COMMUNITIES 상수 (4개 공동체 기본값)
     - shadcn Card 기반 그리드 (3열 lg / 2열 md / 1열 sm)
     - hover:shadow-lg hover:-translate-y-1 transition
 
-[ ] 3-3-B 테스트 통과 확인
+[x] 3-3-B 테스트 통과 확인
 
 [ ] 3-3-C Playwright 시각 검증
     - 공동체 섹션 vs references/desktop/03-community.png 비교 (2~3회)
@@ -221,40 +221,40 @@ interface ContentSectionProps {
 ```
 
 ```
-[ ] 3-4-A 테스트 작성 — 섹션 구조
+[x] 3-4-A 테스트 작성 — 섹션 구조
     - 섹션 제목이 렌더링된다
     - "더보기" 링크가 /media/sermons를 가진다
 
-[ ] 3-4-A 구현
+[x] 3-4-A 구현
     - 섹션 제목, 부제
     - "더보기" Link
 
-[ ] 3-4-A 테스트 통과 확인
+[x] 3-4-A 테스트 통과 확인
 
-[ ] 3-4-B 테스트 작성 — 영상 카드
+[x] 3-4-B 테스트 작성 — 영상 카드
     - videos prop으로 카드 개수만큼 렌더링된다
     - 각 카드에 영상 제목이 표시된다
     - 각 카드에 날짜가 표시된다
     - videos prop이 빈 배열일 때 카드가 없다
     - videos prop이 없을 때(undefined) 빈 상태 메시지가 표시된다
 
-[ ] 3-4-B 구현
+[x] 3-4-B 구현
     - 4열(lg) / 2열(md) / 1열(sm) 그리드
     - 썸네일 next/image + 재생 아이콘 오버레이
     - 제목, 날짜 텍스트
 
-[ ] 3-4-B 테스트 통과 확인
+[x] 3-4-B 테스트 통과 확인
 
-[ ] 3-4-C 테스트 작성 — YouTube 모달 연동
+[x] 3-4-C 테스트 작성 — YouTube 모달 연동
     - 영상 카드 클릭 시 YoutubeModal이 열린다 (open 상태 변경)
     - 클릭한 카드의 videoId가 모달에 전달된다
 
-[ ] 3-4-C 구현
+[x] 3-4-C 구현
     - selectedVideoId 상태 (null | string)
     - 카드 클릭 → setSelectedVideoId
     - YoutubeModal에 open/videoId/onClose 전달
 
-[ ] 3-4-C 테스트 통과 확인
+[x] 3-4-C 테스트 통과 확인
 
 [ ] 3-4-D Playwright 시각 검증
     - 콘텐츠 섹션 vs references/desktop/04-contents.png 비교 (2~3회)
