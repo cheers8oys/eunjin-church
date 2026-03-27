@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Play } from "lucide-react";
-import YoutubeModal from "@/components/youtube-modal";
+import YoutubeModal from "@/components/common/youtube-modal";
 
 interface ContentSectionProps {
   videos?: {

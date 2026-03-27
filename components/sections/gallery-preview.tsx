@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Lightbox from "@/components/lightbox";
+import Lightbox from "@/components/common/lightbox";
 
 interface GalleryPreviewProps {
   photos?: {

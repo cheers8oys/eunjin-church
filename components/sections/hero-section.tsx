@@ -17,7 +17,7 @@ export default function HeroSection({ heroData }: HeroSectionProps) {
         fill
         priority
         alt="은진교회 배경"
-        src="/placeholder.jpg"
+        src="/images/placeholder.jpg"
         className="object-cover"
       />
       {/* 오버레이 */}
